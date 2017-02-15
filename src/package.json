@@ -1,0 +1,21 @@
+{
+  "name": "rad-nodejs",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Starting point for a containerized Node.js applications.",
+  "author": "Aaron Geiser",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frog/rad-nodejs.git"
+  },
+  "homepage": "https://github.com/frog/rad-nodejs#readme",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^4.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "1.11.0"
+  }
+}
