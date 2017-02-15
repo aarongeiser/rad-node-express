@@ -9,8 +9,8 @@ https://docs.docker.com/engine/installation/
 
 Once Docker is installed on your machine, follow the steps below to begin developing your application.  This is intended for local development, and will map your project root directory into the container and auto restart the applicaiton when changes are made.
 
-1.  In a console, navigate to your project root directory.
-2.  Copy the contents of this repository to your project root directory.
+1.  Navigate to your project root directory and copy the contents of this repository to that location.
+2.  Create a copy of `make_env.dist` and rename it to `make_env`.  Update with your project specific information.
 3.  'make build'
 4.  'make shell'
 5.  'npm install'
