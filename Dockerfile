@@ -1,4 +1,4 @@
-FROM node:6.9
+FROM node:latest
 
 RUN apt-get update
 RUN mkdir /src
