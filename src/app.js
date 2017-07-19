@@ -1,13 +1,23 @@
-let http = require('http');
-let express = require('express');
-let app = express();
-let server = http.createServer(app);
+const http = require('http')
+const express = require('express')
+const app = express()
+const ejs = require('ejs')
+const router = require('./router')
+const bodyParser = require('body-parser')
+const server = http.createServer(app)
 
-// Default route
-app.use('/', (req, res) => {
-	res.send('Hello world!');
-});
+const { NODE_PORT } = process.env
 
-server.listen(process.env.NODE_PORT, () => {
-	console.log('Application running on port: ' + process.env.NODE_PORT);
+// view engine
+app.engine('html', ejs.renderFile)
+app.set('view engine', 'html')
+
+// req/res
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+app.use('/', router(app))
+
+//initialize
+server.listen(NODE_PORT, () => {
+	console.log(`Application running on port: ${NODE_PORT}`)
 });
