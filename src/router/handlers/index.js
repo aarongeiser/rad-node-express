@@ -1,5 +1,5 @@
-const index = require('./default')
+const home = require('./home')
 
 module.exports = {
-  index
+  home
 }

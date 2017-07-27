@@ -5,7 +5,7 @@ const router = express.Router()
 module.exports = app => {
 
   // default routes
-  router.get('/', handlers.index)
+  router.get('/', handlers.home)
 
   return router
 }
