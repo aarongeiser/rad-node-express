@@ -1,4 +1,4 @@
 web:
-  image: frog/rad-nodejs
+  image: rad/rad-nodejs
   ports:
     - "3000:3000"

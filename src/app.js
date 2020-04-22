@@ -36,7 +36,7 @@ app.use(logErrors)
 app.use(clientErrorHandler)
 app.use(errorHandler)
 
-//initialize
+// initialize
 server.listen(NODE_PORT, () => {
 	console.log(`Application running on port: ${NODE_PORT}`)
 });
