@@ -10,10 +10,10 @@ Once Docker is installed on your machine, follow the steps below to begin develo
 
 1.  Navigate to your project root directory and copy the contents of this repository to that location.
 2.  Create a copy of `make_env.dist` and rename it to `make_env`.  Update with your project specific information.
-3.  'make build'
-4.  'make shell'
-5.  'npm install'
-6.  'npm start'
+3.  `make build`
+4.  `make shell`
+5.  `npm install`
+6.  `npm start`
 
 # Success
 1.  If successful, you will see "Application running on port: 3000" in your console.
